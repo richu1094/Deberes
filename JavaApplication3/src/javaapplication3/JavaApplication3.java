@@ -61,7 +61,7 @@ public class JavaApplication3 {
         System.out.println("Introduce otro numero aleatorio");
         num2 = teclado.nextInt();
     while (num1<num2) {num1 = num1+ 1;
-            System.out.println (num1);
+            System.out.println (num2);
         } 
        
     }
