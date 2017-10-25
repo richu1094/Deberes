@@ -11,10 +11,10 @@ public class JavaApplication3 {
                 ejercicio1(teclado);
                 break;
             case 2:
-                ejercicio2();
+                ejercicio2(teclado);
                 break;
             case 3:
-                ejercicio3();
+                ejercicio3(teclado);
                 break;
             case 4:
                 ejercicio4();
@@ -55,25 +55,31 @@ public class JavaApplication3 {
     
     
     public static void ejercicio1(Scanner teclado){
-    int num1,num2;
-        System.out.println("Introduce un numero aleatorio");
-        num1 = teclado.nextInt();
-        System.out.println("Introduce otro numero aleatorio");
-        num2 = teclado.nextInt();
-    while (num1<num2) {num1 = num1+ 1;
-            System.out.println (num2);
-        } 
+        int num1,num2;
+            System.out.println("Introduce el numero menor");
+            num1 = teclado.nextInt();
+            System.out.println("Introduce el numero mayor");
+            num2 = teclado.nextInt();
+        for (int i = num1;i<num2;i++){
+            System.out.print(i);
+        }
        
     }
 
     
-    public static void ejercicio2(){
-
+    public static void ejercicio2(Scanner teclado){
+        int multiplo;
+        for (int a = 0;a<=20;a++){
+            multiplo =  a*5;
+            System.out.print(multiplo+" ");
+        }
+        
     }
     
     
-    public static void ejercicio3(){
-
+    public static void ejercicio3(Scanner teclado){
+        int num1;
+        for (int a = num 1; a )
     }
     
     
