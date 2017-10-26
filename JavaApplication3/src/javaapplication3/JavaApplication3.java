@@ -17,34 +17,34 @@ public class JavaApplication3 {
                 ejercicio3(teclado);
                 break;
             case 4:
-                ejercicio4();
+                ejercicio4(teclado);
                 break;
             case 5:
-                ejercicio5();
+                ejercicio5(teclado);
                 break;
             case 6:
-                ejercicio6();
+                ejercicio6(teclado);
                 break;
             case 7:
-                ejercicio7();
+                ejercicio7(teclado);
                 break;
             case 8:
-                ejercicio8();
+                ejercicio8(teclado);
                 break;
             case 9:
-                ejercicio9();
+                ejercicio9(teclado);
                 break;
             case 10:
-                ejercicio10();
+                ejercicio10(teclado);
                 break;
             case 11:
-                ejercicio11();
+                ejercicio11(teclado);
                 break;
             case 12:
-                ejercicio12();
+                ejercicio12(teclado);
                 break;
             case 13:
-                ejercicio13();
+                ejercicio13(teclado);
                 break;
             default:
                 System.out.println("opcion no valida");
@@ -61,7 +61,7 @@ public class JavaApplication3 {
             System.out.println("Introduce el numero mayor");
             num2 = teclado.nextInt();
         for (int i = num1;i<num2;i++){
-            System.out.print(i);
+            System.out.print(i+" ");
         }
        
     }
@@ -78,57 +78,91 @@ public class JavaApplication3 {
     
     
     public static void ejercicio3(Scanner teclado){
-        int num1;
-        for (int a = num 1; a )
+        int num = 15;
+        double acum = 0;
+        double media;
+        
+        for (int a = 0; a < num;a++ ){
+            System.out.println("Ingresa un numero para calcular la media");
+            int b = teclado.nextInt();
+            acum = acum + b;         
+        }
+            media = acum/15;
+            System.out.println("La media es "+media);
     }
     
     
-    public static void ejercicio4(){
+    public static void ejercicio4(Scanner teclado){
+        int num;
+        double acum = 0;
+        double media;
+        System.out.println("De cuantos numeros deseas calcular la media");
+        num = teclado.nextInt();
+        for (int a = 0; a < num; a++){
+            System.out.println("Ingresa un numero para calcular la media");
+            int b = teclado.nextInt();
+            acum = acum + b;       
+        }
+            media = acum/num;
+            System.out.println("La media es "+media);
+    }
+    
+    
+    public static void ejercicio5(Scanner teclado){
+        int horas;
+        System.out.println("Ingresa un numero de horas");
+        horas = teclado.nextInt();
+        int minutos;
+        System.out.println("Ingresa un numero de minutos");
+        horas = teclado.nextInt();
+        int segundos;
+        System.out.println("Ingresa un numero de segundos");
+        horas = teclado.nextInt();
+            
+        
+        
+    }
+    
+    
+    public static void ejercicio6(Scanner teclado){
+        int segundos;
+        System.out.println("Ingresa un numero de segundos");
+        horas = teclado.nextInt();
+        
+    }
+    
+    
+    public static void ejercicio7(Scanner teclado){
 
     }
     
     
-    public static void ejercicio5(){
+    public static void ejercicio8(Scanner teclado){
 
     }
     
     
-    public static void ejercicio6(){
+    public static void ejercicio9(Scanner teclado){
 
     }
     
     
-    public static void ejercicio7(){
+    public static void ejercicio10(Scanner teclado){
 
     }
     
     
-    public static void ejercicio8(){
+    public static void ejercicio11(Scanner teclado){
 
     }
     
     
-    public static void ejercicio9(){
+    public static void ejercicio12(Scanner teclado){
 
     }
     
     
-    public static void ejercicio10(){
-
-    }
-    
-    
-    public static void ejercicio11(){
-
-    }
-    
-    
-    public static void ejercicio12(){
-
-    }
-    
-    
-    public static void ejercicio13(){
+    public static void ejercicio13(Scanner teclado){
 
     }
     
