@@ -53,7 +53,6 @@ public class JavaApplication3 {
     }
     
     
-    
     public static void ejercicio1(Scanner teclado){
         int num1,num2;
             System.out.println("Introduce el numero menor");
@@ -125,15 +124,26 @@ public class JavaApplication3 {
     
     
     public static void ejercicio6(Scanner teclado){
-        int segundos;
+        int num;
         System.out.println("Ingresa un numero de segundos");
-        horas = teclado.nextInt();
-        
+        num = teclado.nextInt();
+        int horas = num/3600;
+        int minutos=(num-(3600*horas))/60;
+        int segundos=num-((horas*3600)+(minutos*60));
+        System.out.println("Son "+horas+" horas, "+minutos+" minutos "+segundos+" segundos");      
     }
     
     
     public static void ejercicio7(Scanner teclado){
-
+        int num;
+        int cont=10;
+        int mayor;
+        for(int a=0 ; a<cont ; a++){
+            System.out.println("Ingresa un numero");
+            num = teclado.nextInt();
+            mayor = 
+            
+        }
     }
     
     
