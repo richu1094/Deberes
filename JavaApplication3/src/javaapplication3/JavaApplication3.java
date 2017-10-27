@@ -125,11 +125,15 @@ public class JavaApplication3 {
     
     public static void ejercicio6(Scanner teclado){
         int num;
+        int horas;
+        int minutos;
+        int segundos;
+                
         System.out.println("Ingresa un numero de segundos");
         num = teclado.nextInt();
-        int horas = num/3600;
-        int minutos=(num-(3600*horas))/60;
-        int segundos=num-((horas*3600)+(minutos*60));
+        horas = num/3600;
+        minutos=(num-(3600*horas))/60;
+        segundos=num-((horas*3600)+(minutos*60));
         System.out.println("Son "+horas+" horas, "+minutos+" minutos "+segundos+" segundos");      
     }
     
@@ -138,37 +142,145 @@ public class JavaApplication3 {
         int num;
         int cont=10;
         int mayor;
-        for(int a=0 ; a<cont ; a++){
+        int menor;
+        
+        System.out.println("Ingresa un numero");
+            num = teclado.nextInt();
+            menor=num;
+            mayor=num;
+        for(int a = 1 ; a < cont ; a++){
             System.out.println("Ingresa un numero");
             num = teclado.nextInt();
-            mayor = 
-            
-        }
+        if(num>mayor){
+            mayor=num;}
+        else if(num<menor){
+                menor=num;}
+                                   }
+        System.out.println("El numero mayor es "+mayor+" y el menor es "+menor);
     }
     
     
     public static void ejercicio8(Scanner teclado){
-
+        int num;
+        int factorial = 1;
+        
+        System.out.println("Ingresa un numero para calcular su factorial");
+        num = teclado.nextInt();
+        for (int a = 1 ; a <= num ; a++){
+        factorial = factorial * a;
+                                    }
+        System.out.println("El resultado es "+factorial);
     }
     
     
     public static void ejercicio9(Scanner teclado){
-
+        int num;
+        int mayor;
+        int cont = 3;
+        System.out.println("Ingresa 3 numeros");
+        num = teclado.nextInt();
+        mayor = num;
+        for(int a = 1 ; a <cont ; a++){
+            System.out.println("Ingresa 3 numeros");
+            num = teclado.nextInt();  
+        if(mayor >= num){
+            System.out.println("");
+            }
+                              }
     }
     
     
     public static void ejercicio10(Scanner teclado){
+        int num;
+        System.out.println("Ingresa una nota numerica");
+        num = teclado.nextInt();
+        switch (num) {
+            case 0:
+                System.out.println("Cero");
+                break;
+            case 1:
+                System.out.println("Uno");
+                break;
+            case 2:
+                System.out.println("Dos");
+                break;
+            case 3:
+                System.out.println("Tres");
+                break;
+            case 4:
+                System.out.println("Cuatro");
+                break;
+            case 5:
+                System.out.println("Cinco");
+                break;
+            case 6:
+                System.out.println("Seis");
+                break;
+            case 7:
+                System.out.println("Siete");
+                break;
+            case 8:
+                System.out.println("Ocho");
+                break;
+            case 9:
+                System.out.println("Nueve");
+                break;
+            case 10:
+                System.out.println("Diez");
+                break;
+            default:
+                System.out.println("Ingresa una nota valida, melon");
+                break;
+        }
 
     }
     
     
     public static void ejercicio11(Scanner teclado){
-
+        int num;
+        System.out.println("Ingresa una nota");
+        num = teclado.nextInt();
+        if (num>=0 && num<5){
+            System.out.println("INSUFICIENTE");}
+        else if (num == 5){
+            System.out.println("SUFICIENTE");}
+        else if (num == 6){
+            System.out.println("BIEN");}
+        else if (num == 7 || num == 8){
+            System.out.println("NOTABLE");}
+        else if (num == 9 || num == 10){
+            System.out.println("SOBRESALIENTE");}
+        else {
+            System.out.println("Mete una nota valida, melon");}
+        
     }
     
     
     public static void ejercicio12(Scanner teclado){
+        double num;
+        double acum = 0;
+        double nota;
+        double media;
+        int suspensos = 0;
+        int aprobados = 0;
+        
+        System.out.println("Numero de alumnos");
+        num = teclado.nextInt();
+        for(int a = 0; a < num ; a++){
+            System.out.println("Ingrese la nota");
+            nota = teclado.nextInt();
+            acum = acum + nota;
+            if (nota>=0 && nota<5){
+                suspensos++;
+            }
+            else if (nota >= 5 && nota<=10){
+                aprobados++;
+            }
 
+                                    }
+        media = acum / num;
+        System.out.println("La media es "+media+", el numero de aprobados fueron "+aprobados+" y el numero de suspensos fueron "+suspensos+".");
+        
     }
     
     
