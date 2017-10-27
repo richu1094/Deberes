@@ -8,58 +8,74 @@ public class JavaApplication3 {
         int opcion = teclado.nextInt();
         switch (opcion) {
             case 1:
+                System.out.println("Programa que escriba los valores comprendidos entres dos números dados.");
                 ejercicio1(teclado);
                 break;
             case 2:
+                System.out.println("Escribir un programa que escriba por pantalla los veinte primeros múltiplos de cinco.");
                 ejercicio2(teclado);
                 break;
             case 3:
+                System.out.println("Escribir la media de 15 valores suministrados por el teclado.");
                 ejercicio3(teclado);
                 break;
             case 4:
+                System.out.println("Escribir la media de n valores suministrados por teclado suministrando a su vez el valor por teclado.");
                 ejercicio4(teclado);
                 break;
             case 5:
+                System.out.println("Programa que recibe una cantidad horaria en horas, minutos y segundos y lo convierte todo a minutos.");
                 ejercicio5(teclado);
                 break;
             case 6:
+                System.out.println("Programa que recibe una cantidad horaria en segundos y la convierte en horas, minutos segundos.");
                 ejercicio6(teclado);
                 break;
             case 7:
+                System.out.println("Programa que solicita 10 números por teclado y al concluir escribe el mayor y menor de ellos.");
                 ejercicio7(teclado);
                 break;
             case 8:
+                System.out.println("Escribir un programa que calcule el factorial de un número pedido por teclado");
                 ejercicio8(teclado);
                 break;
             case 9:
+                System.out.println("Escribir un programa que pida 3 números y los imprima de mayor a menor.");
                 ejercicio9(teclado);
                 break;
             case 10:
+                System.out.println("Escribir un programa que pida una nota numérica y la saque por pantalla en letra.");
                 ejercicio10(teclado);
                 break;
             case 11:
+                System.out.println("Escribir un programa que pida una nota numérica y ponga el equivalente en letras");
                 ejercicio11(teclado);
                 break;
             case 12:
+                System.out.println("Un programa que pida el número de alumnos de la clase, pida la nota de todos los alumnos saque la media de la clase y el número de aprobados y suspensos.");
                 ejercicio12(teclado);
                 break;
             case 13:
+                System.out.println("Realizar un programa que imprima todos los números primos entre 1 y n, siendo un número introducido por el usuario");
                 ejercicio13(teclado);
                 break;
             default:
-                System.out.println("opcion no valida");
+                System.out.println("Opcion no valida");
 
         }
     }
     
     
     public static void ejercicio1(Scanner teclado){
-        int num1,num2;
+        int num1;
+        int num2;
             System.out.println("Introduce el numero menor");
             num1 = teclado.nextInt();
             System.out.println("Introduce el numero mayor");
             num2 = teclado.nextInt();
-        for (int i = num1;i<num2;i++){
+        num1++;
+        num2--;
+        for (int i = num1; i <= num2 ; i++){
             System.out.print(i+" ");
         }
        
@@ -68,7 +84,7 @@ public class JavaApplication3 {
     
     public static void ejercicio2(Scanner teclado){
         int multiplo;
-        for (int a = 0;a<=20;a++){
+        for (int a = 1;a<=20;a++){
             multiplo =  a*5;
             System.out.print(multiplo+" ");
         }
@@ -291,7 +307,23 @@ public class JavaApplication3 {
     
     
     public static void ejercicio13(Scanner teclado){
-
+        int num;
+        boolean primo;
+        System.out.println("Ingresa un numero");
+        num = teclado.nextInt();
+        
+        for(int a = 1; a <= num; a++){
+            primo = true;
+            
+            for(int b = 2 ; b <= num; b++){
+                if(a % b==0){
+                    primo = false;}
+                
+            }
+        }
+        if(primo){
+            System.out.println();}
+        
     }
     
 }
