@@ -113,13 +113,19 @@ public class JavaApplication3 {
         horas = teclado.nextInt();
         int minutos;
         System.out.println("Ingresa un numero de minutos");
-        horas = teclado.nextInt();
-        int segundos;
+        minutos = teclado.nextInt();
+        double segundos;
         System.out.println("Ingresa un numero de segundos");
-        horas = teclado.nextInt();
-            
+        segundos = teclado.nextInt();
         
+        int horasenminutos = horas * 60;
+        int minutosenminutos = minutos;
+        double segundosenminutos = segundos/60;
         
+        double acum = horasenminutos + minutosenminutos + segundosenminutos;
+        
+        System.out.println("En minutos son "+acum);
+             
     }
     
     
