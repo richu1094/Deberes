@@ -2,7 +2,7 @@ package javaapplication3;
 import java.util.*;
 public class JavaApplication3 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {     
         int opcion = 0;
         Scanner teclado = new Scanner(System.in);
         do{
@@ -83,7 +83,7 @@ public class JavaApplication3 {
         num1++;
         num2--;
         for (int i = num1; i <= num2 ; i++){
-            System.out.print(i+" ");
+            System.out.println(i);
         }
        
     }
@@ -93,7 +93,7 @@ public class JavaApplication3 {
         int multiplo;
         for (int a = 1;a<=20;a++){
             multiplo =  a*5;
-            System.out.print(multiplo+" ");
+            System.out.println(multiplo);
         }
         
     }
@@ -203,19 +203,7 @@ public class JavaApplication3 {
     
     
     public static void ejercicio9(Scanner teclado){
-        int num;
-        int mayor;
-        int cont = 3;
-        System.out.println("Ingresa 3 numeros");
-        num = teclado.nextInt();
-        mayor = num;
-        for(int a = 1 ; a <cont ; a++){
-            System.out.println("Ingresa 3 numeros");
-            num = teclado.nextInt();  
-        if(mayor >= num){
-            System.out.println("");
-            }
-                              }
+   
     }
     
     
@@ -318,11 +306,13 @@ public class JavaApplication3 {
         int b;
         System.out.println("Introduce un numero");
         int num = teclado.nextInt();
-        for(a=2;a<=num;a++)
+        for(a = 2; a <= num ; a++)
         {
-            for(b=2;a%b!=0;b++);
-            if(a==b)
+            for(b = 2 ; a%b != 0 ; b++)
+            {
+            if(a == b)
                 System.out.print(a+" ");
+            }
         }
         System.out.println();
     }
