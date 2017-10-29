@@ -3,9 +3,11 @@ import java.util.*;
 public class JavaApplication3 {
 
     public static void main(String[] args) {
+        int opcion = 0;
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Selecciona un ejercicio del 1 al 13");
-        int opcion = teclado.nextInt();
+        do{
+        System.out.println("Selecciona un ejercicio del 1 al 13 o 14 para salir");
+        opcion = teclado.nextInt();
         switch (opcion) {
             case 1:
                 System.out.println("Programa que escriba los valores comprendidos entres dos números dados.");
@@ -59,10 +61,15 @@ public class JavaApplication3 {
                 System.out.println("Realizar un programa que imprima todos los números primos entre 1 y n, siendo un número introducido por el usuario");
                 ejercicio13(teclado);
                 break;
+            case 14:
+                System.out.println("Salir");
+                break;
             default:
                 System.out.println("Opcion no valida");
 
         }
+        }
+        while(opcion!=14);
     }
     
     
@@ -307,23 +314,18 @@ public class JavaApplication3 {
     
     
     public static void ejercicio13(Scanner teclado){
-        int num;
-        boolean primo;
-        System.out.println("Ingresa un numero");
-        num = teclado.nextInt();
-        
-        for(int a = 1; a <= num; a++){
-            primo = true;
-            
-            for(int b = 2 ; b <= num; b++){
-                if(a % b==0){
-                    primo = false;}
-                
-            }
+        int a;
+        int b;
+        System.out.println("Introduce un numero para saber los numero primos "
+                + "entre 1 y ese numero");
+        int num=teclado.nextInt();
+        for(a=2;a<=num;a++)
+        {
+            for(b=2;a%b!=0;b++);
+            if(a==b)
+                System.out.print(a+", ");
         }
-        if(primo){
-            System.out.println();}
-        
+        System.out.println();
     }
     
 }
