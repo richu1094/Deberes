@@ -316,14 +316,13 @@ public class JavaApplication3 {
     public static void ejercicio13(Scanner teclado){
         int a;
         int b;
-        System.out.println("Introduce un numero para saber los numero primos "
-                + "entre 1 y ese numero");
-        int num=teclado.nextInt();
+        System.out.println("Introduce un numero");
+        int num = teclado.nextInt();
         for(a=2;a<=num;a++)
         {
             for(b=2;a%b!=0;b++);
             if(a==b)
-                System.out.print(a+", ");
+                System.out.print(a+" ");
         }
         System.out.println();
     }
