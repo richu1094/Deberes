@@ -203,7 +203,24 @@ public class JavaApplication3 {
     
     
     public static void ejercicio9(Scanner teclado){
-   
+        System.out.println("Ingresa el primer numero");
+        int a = teclado.nextInt();
+        System.out.println("Ingresa el segundo numero");
+        int b = teclado.nextInt();
+        System.out.println("Ingresa el tercer numero");
+        int c = teclado.nextInt();
+        if(a>b && a>c && b>c){
+            System.out.println(a+","+b+","+c);}
+        else if(a>b && a>c && b<c){
+            System.out.println(a+","+c+","+b);}
+        else if(b>a && b>c && a>c){
+            System.out.println(b+","+a+","+c);}
+        else if(b>a && b>c && a<c){
+            System.out.println(b+","+c+","+a);}
+        else if(c>a && c>b && a>b){
+            System.out.println(c+","+a+","+b);}
+        else if(c>a && c>b && a<b){
+            System.out.println(c+","+b+","+a);}
     }
     
     
@@ -302,19 +319,18 @@ public class JavaApplication3 {
     
     
     public static void ejercicio13(Scanner teclado){
-        int a;
-        int b;
-        System.out.println("Introduce un numero");
-        int num = teclado.nextInt();
-        for(a = 2; a <= num ; a++)
+        int n;
+        int j;
+        System.out.println("Introduce un numero para saber los numero primos "
+                + "entre 1 y ese numero");
+        int num=teclado.nextInt();
+        for(n=2;n<=num;n++)
         {
-            for(b = 2 ; a%b != 0 ; b++)
-            {
-            if(a == b)
-                System.out.print(a+" ");
-            }
+            for(j=2;n%j!=0;j++);
+            if(n==j)
+                System.out.println(n);
         }
-        System.out.println();
+        System.out.println(); System.out.println();
     }
-    
+
 }
