@@ -1,6 +1,6 @@
-package javaapplication3;
+package RicardoCenteno;
 import java.util.*;
-public class JavaApplication3 {
+public class JavaApplication {
 
     public static void main(String[] args) {     
         int opcion = 0;
